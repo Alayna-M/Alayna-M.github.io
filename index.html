@@ -39,21 +39,32 @@
             <li>A clean layout with routes and pages organized into appropriate folders.</li>
         </ul>
         <p><strong>Technologies Used:</strong> Node.js, Express.js, HTML, CSS, Visual Studio Code</p>
-        <p><strong>Technical Challenges:</strong> I struggled a bit at the beginning with getting all the npm packages to install correctly, and had to trouble shoot some issues caused by empty lines not being removed 
-            from the data file.</p>
-        <p><strong>My Contributions:</strong> I did all the work for this project, which included setting up the user.js route, creating a userinfo.txt file to store data, and making 2 basic frontend html forms for the 
-            user to interact with.</p>
+        <p><strong>Technical Challenges:</strong> I struggled a bit at the beginning with getting all the npm packages to install correctly, and had to trouble shoot some issues caused by empty lines not 
+            being removed from the data file. Both were easy fixes, although the npm installation issues did require some googling to figure out.</p>
+        <p><strong>My Contributions:</strong> This was a solo project, which included setting up the user.js route, creating a userinfo.txt file to store data, and making 2 basic frontend html 
+            forms for the user to interact with.</p>
         <img src="assets/Node_Express_user_info_cropped.gif" alt="gif">
         <img src="assets/Node_Express_food_search_cropped.gif" alt="gif">
         <p><a href="https://github.com/...">View Code on GitHub</a></p>
     </div>
+
     <div class="project">
         <h2>Four In a Row Game</h2>
-        <p><strong>Description:</strong> ....</p>
-        <p><strong>Technologies Used:</strong> ...</p>
-        <p><strong>Technical Challenges:</strong> ...</p>
-        <p><strong>My Contributions:</strong> ...</p>
-        <img src="screenshot.jpg" alt="Screenshot">
+        <p><strong>Description:</strong> This project involved extending some given code for a simple tic-tac-toe game into a fully functioning connect four game, utilizing React. It needed to include the 
+            following features: </p>
+        <ul>
+            <li>A 6x7 grid board where players take turns to drop their tiles into a column.</li>
+            <li>Clicking in a column "drops" a user's tile into that column if an open spot exists. If the column is full, the user's click does nothing.</li>
+            <li>Game logic to detect 4 in a row situations horizontally, vertically, and diagonally. The game announces the winner and prevents further play once a winner is detected.</li>
+            <li>Detection of a tie game when the board is full and no winner is declared.</li>
+            <li>Automatic switching between players after each tile placement.</li>
+        </ul>    
+        <p><strong>Technologies Used:</strong> React.js, HTML, CSS, JavaScript, Visual Studio Code</p>
+        <p><strong>Technical Challenges:</strong> It took me a bit to fully wrap my head around the best way to implement the array storage for keeping track of where each player went, along with how specifically
+            to traverse said away to check for diagnol wins. I did this by implementing a 2D array and utilizing for loops to check through different "directions" in the array (i.e. I had a sperate array containing x,y 
+            values that would specify how the loops should move through the game board array).</p>
+        <p><strong>My Contributions:</strong> I did all the work for this project, albeit building off of the base tic-tac-toe code. This included editing css styling and creating all the logic for full gameplay. </p>
+        <img src="assets/Connect_Four.gif" alt="gif">
         <p><a href="https://github.com/...">View Code on GitHub</a></p>
     </div>
     <div class="project">
