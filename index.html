@@ -3,66 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alayna Myers - Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: #fff;
             padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
         }
         .container {
-            max-width: 1200px;
-            margin: 20px auto;
+            max-width: 1000px;
+            margin: 30px auto;
             padding: 0 20px;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #4CAF50;
+        }
+        .profile h2 {
+            margin: 10px 0 5px;
+            font-size: 1.8em;
+        }
+        .profile p {
+            margin: 0;
+            font-size: 1.1em;
+            color: #666;
         }
         .project {
             background-color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         .project h2 {
             margin-top: 0;
+            font-size: 2em;
+            color: #4CAF50;
+        }
+        .project p {
+            margin: 15px 0;
+        }
+        .project ul {
+            list-style-type: disc;
+            margin-left: 20px;
         }
         .project img {
             max-width: 100%;
-            border-radius: 8px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .project a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project a:hover {
+            text-decoration: underline;
         }
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #333;
+            background-color: #4CAF50;
             color: #fff;
+        }
+        .github-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .github-link a {
+            color: #4CAF50;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .github-link a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Alayna Myers</h1>
-    <p>Welcome</p>
+    <h1>Your Name</h1>
+    <p>Welcome to my portfolio</p>
 </header>
+
+<div class="container">
+    <div class="profile">
+        <img src="path_to_profile_picture.jpg" alt="Profile Picture">
+        <h2>Alayna Myers</h2>
+        <p>she/they</p>
+    </div>
+
+
+    <p><strong>Description:</strong> This project involves creating a Node/Express website with the following features:</p>
+        <ul>
+            <li>An HTML form to collect a user's first name, last name, and favorite food. This data is stored in a text file on the backend.</li>
+            <li>A route that reads the stored data from the text file and dynamically generates an HTML page to display all the information.</li>
+            <li>A second HTML form that allows users to search for people by their favorite food, displaying matching results.</li>
+            <li>A clean layout with routes and pages organized into separate folders.</li>
+        </ul>
+        <p><strong>Technologies Used:</strong> Node.js, Express.js, HTML, CSS, Visual Studio Code.</p>
+        <p><strong>Technical Challenges:</strong> [You can fill this in with specific challenges you encountered during the project.]</p>
+        <p><strong>My Contributions:</strong> [You can detail your specific contributions here.]</p>
 
 <div class="container">
     <div class="project">
         <h2>Node/Express Site with File Storage</h2>
-        <p><strong>Description:</strong> ....</p>
-        <p><strong>Technologies Used:</strong> ...</p>
-        <p><strong>Technical Challenges:</strong> ...</p>
-        <p><strong>My Contributions:</strong> ...</p>
-        <img src="screenshot.jpg" alt="Screenshot">
+        <p><strong>Description:</strong> For this project the goal was to simply get practice working the basices of Node and Express. This involved creating a Node/Express website that has the following features:  </p>
+        <ul>
+            <li>An HTML form to collect a user's first name, last name, and favorite food. This data is stored in a text file on the backend.</li>
+            <li>A route that reads the stored data from the text file and dynamically generates an HTML page to display all information.</li>
+            <li>A second HTML form that allows users to search for people by their favorite food and displays matching results.</li>
+            <li>A clean layout with routes and pages organized into appropriate folders.</li>
+        </ul>
+        <p><strong>Technologies Used:</strong> Node.js, Express.js, HTML, CSS, Visual Studio Code</p>
+        <p><strong>Technical Challenges:</strong> I struggled a bit at the beginning with getting all the npm packages to install correctly, and had to trouble shoot some issues caused by empty lines not being removed 
+            from the data file.</p>
+        <p><strong>My Contributions:</strong> I did all the work for this project, which included setting up the user.js route, creating a userinfo.txt file to store data, and making 2 basic frontend html forms for the 
+            user to interact with.</p>
+        <img src="assets/Node_Express_user_info_cropped.gif" alt="gif">
+        <img src="assets/Node_Express_food_search_cropped.gif" alt="gif">
         <p><a href="https://github.com/...">View Code on GitHub</a></p>
     </div>
     <div class="project">
