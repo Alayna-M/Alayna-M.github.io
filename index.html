@@ -64,7 +64,8 @@
             to traverse said away to check for diagnol wins. I did this by implementing a 2D array and utilizing for loops to check through different "directions" in the array (i.e. I had a sperate array containing x,y 
             values that would specify how the loops should move through the game board array).</p>
         <p><strong>My Contributions:</strong> I did all the work for this project, albeit building off of the base tic-tac-toe code. This included editing css styling and creating all the logic for full gameplay. </p>
-        <img src="assets/Connect_Four.gif" alt="Connect Four gif">
+        <img src="assets/Conncet_Four_vertical.gif" alt="Connect Four Vertical Win gif">
+        <img src="assets/Connect_Four_diagnol.gif" alt="Connect Four Diagnol Win gif">
         <p><a href="https://github.com/Alayna-M/Alayna-M.github.io/tree/main/Connect_Four">View Code on GitHub</a></p>
     </div>
     <div class="project">
@@ -89,20 +90,63 @@
     </div>
     <div class="project">
         <h2>Hangman</h2>
-        <p><strong>Description:</strong> ....</p>
-        <p><strong>Technologies Used:</strong> ...</p>
-        <p><strong>Technical Challenges:</strong> ...</p>
-        <p><strong>My Contributions:</strong> ...</p>
-        <img src="screenshot.jpg" alt="Screenshot">
+        <p><strong>Description:</strong> This project involved creating a simple Hangman game that can keep track of high scores for each length of word. The project includes the following features:</p>
+        <ul>
+            <li>The game begins by asking the user for their name, which is stored for the session duration.</li>
+            <li>A randomly chosen word is displayed as a series of blank slots representing each letter. The user attempts to guess the letters.</li>
+            <li>If a guessed letter is correct, it is revealed in the correct position(s). If incorrect, the hangman progresses, and the incorrect letter is added to a visible list.</li>
+            <li>If the user successfully guesses the word, their score (based on the number of guesses) is stored and displayed in a top 10 high scores table for words of similar length.</li>
+            <li>If the user fails to guess the word, the correct word is revealed, and the user is shown the top 10 high scores table for similar words.</li>
+            <li>The game then prompts the user to play again, maintaining their session and name for the next game.</li>
+            <li>The word list contains over 1000 words, randomly selected for each game, ensuring a varied experience.</li>
+        </ul>
+        <p><strong>Technologies Used:</strong> React.js, Node.js, Express.js, MongoDB, Mongoose, Sessions, RESTful API, Visual Studio Code.</p>
+        <p><strong>Technical Challenges:</strong> The biggest hurdle for this project was getting the 1000 word bank csv file to work properly, but one of my teammates was very proactive on tackling the issue 
+            and was able to sort it out quickly. We also debated about whether or not to add some simple animation of a hangman stick figure to go along with the player guesses, but ultimately decided to just 
+            keep track of how many incorrect guesses had been made and notify the player when the game ended.</p>
+        <p><strong>My Contributions:</strong> This was a group project I worked on with two other partners. I kicked everything off by building up the base skeleton code and assigning routes, then tackled the 
+            logic for keeping track/checking guesses for each player session. I also revamped some of the base game logic my partners worked on to integrate it better with the updated tracking/guess code and 
+            polished up some of the frontend UI display to make it more readable. After that I handled the route and logic for routing the user to the highscore page after a Game Over event, making sure it 
+            pulls from the correct array according to word length.</p>
+        <img src="assets/Hangman_login.gif" alt="Hangman Login gif">
+        <img src="assets/Hangman_guess.gif" alt="Hangman Gameplay gif">
         <p><a href="https://github.com/Alayna-M/Alayna-M.github.io/tree/main/Hangman">View Code on GitHub</a></p>
     </div>
     <div class="project">
-        <h2>Banking App</h2>
-        <p><strong>Description:</strong> ....</p>
-        <p><strong>Technologies Used:</strong> ...</p>
-        <p><strong>Technical Challenges:</strong> ...</p>
-        <p><strong>My Contributions:</strong> ...</p>
-        <img src="screenshot.jpg" alt="Screenshot">
+        <h2>Full-Stack Banking Application</h2>
+        <p><strong>Description:</strong> This project was based around the development of a full-stack banking application with a React frontend and a Node/Express/MongoDB backend. For simplification I've broken
+            it into two components, the frontend and the backend. Their respective features include:</p>
+    
+        <h3>Frontend Features:</h3>
+        <ul>
+            <li>A functioning login system that requests a username and password, verifying credentials through the backend.</li>
+            <li>Support for three user roles: administrator, employee, and customer, each with specific permissions and capabilities.</li>
+            <li>Administrators can access all screens, manage user roles, and have their own bank accounts.</li>
+            <li>Customers can manage their own accounts, including savings, checking, and investment accounts, with options to deposit, withdraw, and transfer money.</li>
+            <li>Employees can view and manage customer accounts, perform transfers between accounts, and assist with customer transactions.</li>
+            <li>A clean, consistent UI designed using Bootstrap, ensuring that the application is polished, user-friendly, and professional.</li>
+            <li>Responsive design elements that ensure the application functions well across different devices.</li>
+        </ul>
+        
+        <h3>Backend Features:</h3>
+        <ul>
+            <li>Implementation of a secure login system with hashed passwords using SHA-256 for credential verification.</li>
+            <li>Integration with MongoDB to store user data, account information, and transaction histories.</li>
+            <li>Role-based access control, allowing administrators, employees, and customers to have different levels of access and permissions within the application.</li>
+            <li>Full account management features, including the ability to deposit, withdraw, and transfer funds between accounts.</li>
+            <li>Detailed transaction history for both individual accounts and overall account activity, tracked with timestamps and amounts.</li>
+            <li>APIs to handle all interactions between the frontend and backend, ensuring smooth and secure data exchanges.</li>
+        </ul>
+        
+        <p><strong>Technologies Used:</strong> React.js, Node.js, Express.js, MongoDB, Mongoose, Tailwind CSS, RESTful API, SHA-256, Visual Studio Code.</p>
+        <p><strong>Technical Challenges:</strong> The biggest challenge for this project was figuring out how to implement protected routes, as none of us on the team had any experience with it before. I 
+            initially tried using Rect Context for authentication but it was causing interference with Tailwind CSS so I ended up switching my approach to simply having it all handled by the backend via session
+            middleware and CORS, with the React frontend simply checking with the backend for authentication status and role.</p>
+        <p><strong>My Contributions:</strong> This was a group project and my main focus for it was sorting out protected routes and creating an employeeSummary route for viewing user account info and handling 
+            transactions/transfers. This included things like base UI, error handling, transaciton/transfer logic, checking balances validating information, updating history, etc. I also assisted with debugging
+            the other routes during their completion.</p>
+        <img src="assets/banking_ui.gif" alt="Banking UI gif">
+        <img src="assets/banking_deposit.gif" alt="Banking Deposit gif">
         <p><a href="https://github.com/Alayna-M/Alayna-M.github.io/tree/main/Banking_App">View Code on GitHub</a></p>
     </div>
 </div>
