@@ -103,16 +103,3 @@ footer {
 .github-link a:hover {
     text-decoration: underline;
 }
-
-.image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-container img {
-    max-width: 100%;
-    max-height: 300px;
-    object-fit: contain;
-}
-
